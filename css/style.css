@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  background-color: #0D0D0D;
+  color: #f9f6f6 !important;
+  overflow: hidden;
+}
+
+.loading {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0D0D0D;
+}
+
+.inner_loading{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: #0D0D0D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.side-nav {
+  width: 320px;
+  z-index: 99;
+  left: -150px;
+}
+
+li{
+  cursor: pointer;
+}
+.search input::placeholder
+{
+  color: gray;
+}
+
+.meal-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f6f6ca;
+  display: flex;
+  align-items: center;
+  transform: translateY(100%);
+  transition: all 0.5s;
+}
+
+.meals:hover .meal-layer {
+  transform: translateY(0);
+}
+
+.btn-1:focus {
+  box-shadow: 0px 0px 0 0.25rem rgba(60, 153, 110, .5)
+}
+
+.btn-2:focus ,.btn-3:focus {
+  box-shadow: 0px 0px 0 0.25rem rgba(225, 83, 97, .5);
+}
+
+.meals,.area,.Ingrident,i{
+  cursor: pointer;
+}
+
+

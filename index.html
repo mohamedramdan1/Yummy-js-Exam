@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yummy</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- outer loading -->
+  <div class="loading">
+    <i class="fa fa-spinner fa-spin fa-5x"></i>
+  </div>
+
+  <!-- navbar -->
+  <div class="side-nav min-vh-100 d-flex position-fixed top-0">
+    <div class="nav-links d-flex flex-column justify-content-between min-vh-100 p-4 bg-black">
+      <div class="links">
+        <ul class="list-unstyled overflow-hidden">
+          <li class="py-2 position-relative" id="search_of">Search</li>
+          <li class="py-2 position-relative" id="categories">Categories</li>
+          <li class="py-2 position-relative" id="area">Area</li>
+          <li class="py-2 position-relative" id="ingredients">Ingredients</li>
+          <li class="py-2 position-relative" id=contact_us>Contact Us</li>
+        </ul>
+      </div>
+      <div class="nav-footer">
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="footer">
+          <p>Copyright Â© 2019 All Rights
+            Reserved.</p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="nav-icons d-flex flex-column justify-content-between align-items-center py-4 text-center px-2 bg-white text-black ">
+      <img src="images/logo.png" width="60px" alt="logo">
+      <i class="fa-solid icon fa-2x fa-x"></i>
+      <div>
+        <i class="fa-solid fa-globe d-block"></i>
+        <i class="fa-solid fa-share-nodes pt-1"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- search-box -->
+  <div class="container w-75 search" id="search-box">
+  </div>
+
+  <!-- meals , searchmeals , categroymeals , areameals , ingredintmeals , contact -->
+  <div class="min-vh-100 position-relative">
+    <div class="inner_loading">
+      <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <div class="container">
+      <div class="row g-4 py-5" id="row_data">
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
